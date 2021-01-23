@@ -6,23 +6,35 @@ layout: home
     <h1>Linkliste Visualisierung</h1>
 
     <h1>Cut Outs</h1>
-    {% assign tools = site.data.cutout | sort: "name" %}
+    {% assign cutout = site.data.cutout | sort: "name" %}
     <div>
 
          <ul>
-            {% for cutout in tools %}
+            {% for cutout in cutout %}
             <li><a href="{{ cutout.link}}" target="_blank">{{ cutout.name }}</a></li>
             {% endfor %}
         </ul>
 
     </div>
 
+    <h1>texturen</h1>
+    {% assign texturen = site.data.texturen | sort: "name" %}
+    <div>
+
+         <ul>
+            {% for texturen in texturen %}
+            <li><a href="{{ texturen.link}}" target="_blank">{{ texturen.name }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
     <h1>Inspiration</h1>
-    {% assign tools = site.data.inspiration | sort: "name" %}
+    {% assign inspiration = site.data.inspiration | sort: "name" %}
     <div>
 
         <ul>
-            {% for inspiration in tools %}
+            {% for inspiration in inspiration %}
             <li><a href="{{ inspiration.link}}" target="_blank">{{ inspiration.name }}</a></li>
             {% endfor %}
         </ul>
