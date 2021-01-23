@@ -2,21 +2,7 @@
 layout: home
 ---
 
-<h1>Links</h1>
-
-
-{% assign links = site.data.link | sort: "name" %}
-<div>
-
-    <ul>
-        {% for link in links %}
-        <li><a class="blue-link" href="{{ link.link}}" target="_blank">{{ link.name }}</a></li>
-        <p>{{ link.description }}</p>
-        {% endfor %}
-    </ul>
-
-</div>
-
+<h1>Linkliste Visualisierung</h1>
 
 <h1>Cut Outs</h1>
 {% assign tools = site.data.cutout | sort: "name" %}
