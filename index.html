@@ -18,14 +18,14 @@ layout: home
 </div>
 
 
-<h1>Tools</h1>
-{% assign tools = site.data.tools %}
+<h1>Cut Outs</h1>
+{% assign tools = site.data.cutout %}
 <div>
 
     <ul>
-        {% for tool in tools %}
-        <li>{{ tool.link}} </li>
-        <p>{{ tool.description }}</p>
+        {% for cutout in tools %}
+        <li>{{ cutout.link}} </li>
+        <p>{{ cutout.description }}</p>
         {% endfor %}
     </ul>
 
