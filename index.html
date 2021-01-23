@@ -29,3 +29,15 @@ layout: home
     </ul>
 
 </div>
+
+<h1>Inspiration</h1>
+{% assign tools = site.data.inspiration | sort: "name" %}
+<div>
+
+    <ul>
+        {% for cutout in tools %}
+        <li><a href="{{ inspiration.link}}" target="_blank">{{ inspiration.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+</div>
