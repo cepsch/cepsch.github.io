@@ -3,31 +3,30 @@ layout: home
 ---
 <body>
 
+    <h1>Linkliste Visualisierung</h1>
 
-<h1>Linkliste Visualisierung</h1>
+    <h1>Cut Outs</h1>
+    {% assign tools = site.data.cutout | sort: "name" %}
+    <div>
 
-<h1>Cut Outs</h1>
-{% assign tools = site.data.cutout | sort: "name" %}
-<div>
+         <ul>
+            {% for cutout in tools %}
+            <li><a href="{{ cutout.link}}" target="_blank">{{ cutout.name }}</a></li>
+            {% endfor %}
+        </ul>
 
-    <ul>
-        {% for cutout in tools %}
-        <li><a href="{{ cutout.link}}" target="_blank">{{ cutout.name }}</a></li>
-        {% endfor %}
-    </ul>
+    </div>
 
-</div>
+    <h1>Inspiration</h1>
+    {% assign tools = site.data.inspiration | sort: "name" %}
+    <div>
 
-<h1>Inspiration</h1>
-{% assign tools = site.data.inspiration | sort: "name" %}
-<div>
+        <ul>
+            {% for inspiration in tools %}
+            <li><a href="{{ inspiration.link}}" target="_blank">{{ inspiration.name }}</a></li>
+            {% endfor %}
+        </ul>
 
-    <ul>
-        {% for inspiration in tools %}
-        <li><a href="{{ inspiration.link}}" target="_blank">{{ inspiration.name }}</a></li>
-        {% endfor %}
-    </ul>
-
-</div>
+    </div>
 
 </body>
