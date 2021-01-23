@@ -19,13 +19,12 @@ layout: home
 
 
 <h1>Cut Outs</h1>
-{% assign tools = site.data.cutout %}
+{% assign tools = site.data.cutout | sort: "name" %}
 <div>
 
     <ul>
         {% for cutout in tools %}
         <li><a href="{{ cutout.link}}" target="_blank">{{ cutout.name }}</a></li>
-    
         {% endfor %}
     </ul>
 
