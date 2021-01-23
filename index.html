@@ -1,0 +1,32 @@
+---
+layout: home
+---
+
+<h1>Links</h1>
+
+
+{% assign links = site.data.link | sort: "name" %}
+<div>
+
+    <ul>
+        {% for link in links %}
+        <li><a href="{{ link.link}}" target="_blank">{{ link.name }}</a></li>
+        <p>{{ link.description }}</p>
+        {% endfor %}
+    </ul>
+
+</div>
+
+
+<h1>Tools</h1>
+{% assign tools = site.data.tools %}
+<div>
+
+    <ul>
+        {% for tool in tools %}
+        <li>{{ tool.link}} </li>
+        <p>{{ tool.description }}</p>
+        {% endfor %}
+    </ul>
+
+</div>
