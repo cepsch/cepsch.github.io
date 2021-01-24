@@ -6,11 +6,11 @@ layout: default
     <h1>Linkliste Research</h1>
 
     <h2>Datenbanken</h2>
-    {% assign datenbank = site.data.datenbank | sort: "name" %}
+    {% assign datenbanken = site.data.datenbanken | sort: "name" %}
     <div>
 
          <ul>
-            {% for datenbank in datenbank %}
+            {% for datenbanken in datenbanken %}
             <li><a href="{{ datenbank.link}}" target="_blank">{{ datenbank.name }}</a></li>
             <p>{{ datenbank.description}}</p>
             {% endfor %}
