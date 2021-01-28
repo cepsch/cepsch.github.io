@@ -31,4 +31,17 @@ layout: default
 
     </div>
 
+    <h2>Suchmaschinen</h2>
+    {% assign suchmaschinen = site.data.suchmaschinen | sort: "name" %}
+    <div>
+
+         <ul>
+            {% for suchmaschinen in suchmaschinen %}
+            <li><a href="{{ suchmaschinen.link}}" target="_blank">{{ suchmaschinen.name }}</a></li>
+            <p>{{ suchmaschinen.description}}</p>
+            {% endfor %}
+        </ul>
+
+    </div>
+
 </body>
