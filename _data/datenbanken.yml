@@ -4,3 +4,10 @@
 - link: "https://katalog.ub.tu-dortmund.de/"
   name: "Unibibliothek TU Dortmund"
   description: "Zugang über VPN-Client"
+
+- link: "https://www.jstor.org/"
+  name: "JSTOR"
+
+- link: "https://www.artstor.org/"
+  name: "ARTSTOR"
+  description: "Artstor is the most extensive image resource for educational and scholarly use"
